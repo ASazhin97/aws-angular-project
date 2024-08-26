@@ -10,8 +10,6 @@ phases:
       - npm install
   build:
     commands:
-      - echo 'Build error simulation!'
-      - exit 1S
       - ng build -c production
     finally:
       - echo 'This is the finally of the execution'
